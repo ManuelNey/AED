@@ -238,6 +238,8 @@ public class TestsAVL<T> {
         assertEquals(65,arbol.getRaiz().getEtiqueta());
         assertEquals(77,arbol.getRaiz().getHijoDer().getEtiqueta());
         assertEquals(50,arbol.getRaiz().getHijoIzq().getEtiqueta());
+        assertNull(arbol.buscar(57));
+        assertNotNull(arbol.buscar(65));
     }
 }
 
