@@ -13,7 +13,7 @@ public class ElementoAVL<T> extends TElementoAB<T> {
     }
     private static int obtenerAlturaDadoNodo(ElementoAVL elementoAVL)
     {
-        if (elementoAVL.getHijoDer() == null && elementoAVL.getHijoIzq() == null)
+        if (elementoAVL == null)
         {
             return -1;
         }
