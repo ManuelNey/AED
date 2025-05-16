@@ -21,7 +21,8 @@ public class ArbolAVL<T> extends ArbolBB<T> {
             if (elementoBuscado != null) {
                 return false;
             }
-            setRaiz((ElementoAVL)getRaiz().insertar(elementoBuscado));
+            ElementoAVL raiz= (ElementoAVL) getRaiz();
+            setRaiz(raiz.insertar(elementoBuscado));
             return true;
         }
     }
