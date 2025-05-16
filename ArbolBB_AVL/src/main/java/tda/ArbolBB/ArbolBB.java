@@ -15,9 +15,7 @@ public class ArbolBB<T> implements IArbolBB<T> {
     }
 
     public void setRaiz(IElementoAB<T> unaRaiz) {
-        if (this.raiz == null) {
-            this.raiz = unaRaiz;
-        }
+        this.raiz = unaRaiz;
     }
 
     public int getContador() {
@@ -98,14 +96,12 @@ public class ArbolBB<T> implements IArbolBB<T> {
         if (this.raiz == null) {
             this.raiz = new TElementoAB<>(unaEtiqueta, unDato);
             this.contador++;
-            System.out.println("Contador: " + this.contador);
             return true;
         } else {
             boolean resultado = this.raiz.insertar(new TElementoAB<>(unaEtiqueta, unDato));
             if (resultado) {
                 this.contador++;
             }
-            System.out.println("Contador: " + this.contador);
             return resultado;
         }
     }

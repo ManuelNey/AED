@@ -7,13 +7,14 @@ public class ArbolAVL<T> extends ArbolBB<T> {
     {
         super();
     }
+    @Override
     public boolean insertar(Comparable etiqueta, T unDato) {
         if (etiqueta == null || unDato == null) {
             return false;
         }
         ElementoAVL<T> elemento = new ElementoAVL<T>(etiqueta, unDato);
         if (super.getRaiz() == null) {
-            super.setRaiz((ElementoAVL) elemento);
+            super.setRaiz(elemento);
             return true;
         }
         else {
@@ -22,7 +23,7 @@ public class ArbolAVL<T> extends ArbolBB<T> {
                 return false;
             }
             ElementoAVL raiz= (ElementoAVL) getRaiz();
-            setRaiz(raiz.insertar(elementoBuscado));
+            setRaiz(raiz.insertar(elemento));
             return true;
         }
     }
