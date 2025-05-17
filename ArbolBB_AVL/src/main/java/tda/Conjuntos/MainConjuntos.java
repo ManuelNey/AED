@@ -1,7 +1,5 @@
 package tda.Conjuntos;
 
-import UT3_PD3.Lista;
-import UT3_PD3.Nodo;
 
 public class MainConjuntos {
     public static void main(String[] args) {
@@ -11,7 +9,7 @@ public class MainConjuntos {
             conjunto1.insertar(i, i);
         }
         IConjunto conjunto2 = new Conjunto();
-        for (int i = 1; i < 11; i++) {
+        for (int i = 0; i < 11; i++) {
             conjunto2.insertar(i, i);
         }
 
@@ -121,5 +119,11 @@ public class MainConjuntos {
             System.out.println("Interseccion no funciona");
         }
         System.out.println(AED1.interseccion(PF).imprimir());
+
+        IConjunto difSim = conjunto1.diferenciaSimetrica(conjunto2);
+        System.out.println(difSim.imprimir());
+        IConjunto complemento = conjunto1.complemento(conjunto2);
+        System.out.println(complemento.imprimir());
     }
+
 }

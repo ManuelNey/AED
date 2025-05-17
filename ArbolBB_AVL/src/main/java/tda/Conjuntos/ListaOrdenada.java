@@ -1,16 +1,13 @@
 package tda.Conjuntos;
 
-import UT3_PD3.Lista;
-import UT3_PD3.Nodo;
+import tda.Conjuntos.Nodo;
 
 public class ListaOrdenada<T> extends Lista<T> {
-    @Override
     public void insertar(Nodo<T> unNodo) {
         Nodo<T> aux1= this.getPrimero();
         if(aux1==null){
             this.setPrimero(unNodo);
         }
-
         else{
             if(this.buscar(unNodo.getEtiqueta())==null) {//Para evitar repeticiones
                 Nodo<T> aux2 = aux1.getSiguiente();

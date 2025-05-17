@@ -1,6 +1,5 @@
 package tda.Conjuntos;
 
-import UT3_PD3.Nodo;
 import org.junit.Before;
 import org.junit.Test;
 
