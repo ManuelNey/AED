@@ -1,0 +1,12 @@
+Grados: 2, Tipo de Parentesco: consanguineo
+Grados: 1, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: consanguineo
+Grados: 1, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: consanguineo
+Grados: 1, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: null
+Grados: 2, Tipo de Parentesco: consanguineo
+Grados: 1, Tipo de Parentesco: null
+Grados: 3, Tipo de Parentesco: politico
